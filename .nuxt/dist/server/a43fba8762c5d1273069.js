@@ -1,0 +1,2 @@
+exports.ids=[4],exports.modules={603:function(t,e,r){"use strict";r.r(e);var d={name:"trades"},n=r(2),component=Object(n.a)(d,function(){var t=this.$createElement,e=this._self._c||t;return e("div",{staticClass:"animated fadeIn"},[e("b-card",{attrs:{"header-tag":"header"}},[e("div",{attrs:{slot:"header"},slot:"header"},[e("i",{staticClass:"icon-drop"}),this._v(" Trades Page\n    ")]),this._v(" "),e("b-card-body",[e("b-row",[e("div",[this._v("something")])])],1)],1)],1)},[],!1,null,null,"2eb5b4dc");e.default=component.exports}};
+//# sourceMappingURL=a43fba8762c5d1273069.js.map
