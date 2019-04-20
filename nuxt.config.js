@@ -1,17 +1,28 @@
-import pkg from './package'
 
-export default {
+const changeLoaderOptions = loaders => {
+    if (loaders) {
+        for (const loader of loaders) {
+            if (loader.loader === 'sass-loader') {
+                Object.assign(loader.options, {
+                    includePaths: ['./assets']
+                })
+            }
+        }
+    }
+}
+
+module.exports = {
   mode: 'spa',
 
   /*
   ** Headers of the page
   */
   head: {
-    title: pkg.name,
+    title: 'My title',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: pkg.description }
+      { hid: 'description', name: 'description', content: 'package content' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
